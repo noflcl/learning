@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color:rgb(210, 210, 210); 
+ }
+
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    align-items: flex-start;
+ }
+
+.card {
+    background-color: #CCC;
+    color:rgb(28, 28, 28);
+    padding: .5rem;
+ }
+
+.card-text-trim {
+    overflow: hidden;
+    --max-lines: 5;
+    --line-height: 1.4;
+    /* If you want to determin the height of your box you can calculate: 
+    "How many lines you want to show, multiplied by your font size, multiplied by the line height".
+    max-lines * 1em * line-height 
+    */
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+    position: relative;
+}
+
+.card-text-trim:has(+ .expand-btn:not(:checked))::before {
+    content: "";
+    position: absolute;
+    height: calc(1em * var(--line-height));
+    width: 100%;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, #CCC);
+}
+
+.expand-btn {
+    appearance: none;
+    border: 1px solid #000;
+    padding: .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.expand-btn:hover {
+    background-color: #fff;
+}
+
+.expand-btn::before {
+    content: "Expand";
+}
+
+.expand-btn:checked::before {
+    content: "Collapse";
+}
+
+.card-text-trim:has(+ .expand-btn:checked) {
+    max-height: none;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    margin-top: 1em;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.score-board {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
