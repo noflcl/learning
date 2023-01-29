@@ -13,5 +13,5 @@ Some of the first things you accomplish in the course is building some very basi
   - [ ] Create a score board
   - [ ] Create game UI elements
   - [x] Create a reusable "games window"
-  - [ ] Load each game within that reusable window
+  - [x] Load each game within that reusable window
 
