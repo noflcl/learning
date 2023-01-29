@@ -88,3 +88,19 @@ console.log(plantNeedsWaterConcise("Wednesday"));
 
 const squareNum = (num) => num * num;
 console.log(squareNum(6));
+
+// Playing with cookies
+// Use a cookie to determine what game was selected for the games window
+function setCookie(name, value) {
+  let updatedCookie =
+    encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+  document.cookie = updatedCookie;
+}
+
+// Clear the game cookie on page load
+document.cookie = "game=; max-age=0";
+
+// setCookie("game", "RPS");
+// console.log(document.cookie);
+// alert(document.cookie);

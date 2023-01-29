@@ -43,7 +43,7 @@
           <center>
             <a
               href="games.html"
-              onclick="centeredPopup(this.href,'myWindow','700','500','yes');return false"
+              onclick="setCookie('game', 'RPS'); centeredPopup(this.href,'myWindow','700','500','yes');return false"
               ><img
                 src="./images/rockPaperScissors.jpg"
                 width="250"
@@ -55,14 +55,28 @@
       <article class="card">
         <p class="cards">
           <center>
-            <img src="./images/gameHolding.jpg" width="250" height="200" />
+            <a
+              href="games.html"
+              onclick="setCookie('game', 'TTT'); centeredPopup(this.href,'myWindow','700','500','yes');return false"
+              ><img
+                src="./images/gameHolding.jpg"
+                width="250"
+                height="200"
+            /></a>
           </center>
         </p>
       </article>
       <article class="card">
         <p class="cards">
           <center>
-            <img src="./images/gameHolding.jpg" width="250" height="200" />
+            <a
+              href="games.html"
+              onclick="setCookie('game', 'YAT'); centeredPopup(this.href,'myWindow','700','500','yes');return false"
+              ><img
+                src="./images/gameHolding.jpg"
+                width="250"
+                height="200"
+            /></a>
           </center>
         </p>
       </article>
@@ -119,6 +133,7 @@
       </article>
     </section>
     <br /><br />
+    
     <script>
       // alert("Your Javascript sourced from index.html is running!")
       console.log(
@@ -131,6 +146,5 @@
     <!-- External JS file -->
     <script src="./script.js"></script>
     <script src="./gamesWindow.js"></script>
-    <script src="./gameRockPaperScissors.js"></script>
   </body>
 </html>

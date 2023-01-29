@@ -71,4 +71,4 @@ function determineWinner(fetchUserChoice, fetchComputerChoice) {
 
 // console.log(fetchfetchUserChoice("paper"));
 // console.log(fetchComputerChoice());
-// console.log(determineWinner(fetchUserChoice("paper"), fetchComputerChoice()));
+console.log(determineWinner(fetchUserChoice("paper"), fetchComputerChoice()));
