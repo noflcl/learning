@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackOverflow Q&A</title>
+</head>
+
+<body>
+    <form xmlns="myform">
+        <center>
+            <h1>w3 school alert popup</h1>
+            <input id="HelloWorld" onClick="alert('This text IS NOT showing for your Google page 😿')" type="button"
+                value="HelloWorld" />
+        </center>
+    </form>
+
+    <br>
+    <center><h1>Solution for Google page</h1></center>
+        <div class="container">
+            <div class="questionArea">
+                <center>
+                <button onclick="popupFunction()">clickMyButton
+                </button>
+                </center>
+            </div>
+            <div class="responseArea">
+                <br><br><br><br><br>
+                <div class="popup">
+                    <span class="popuptext" id="myPopup"><a href="" class="close" onclick="popupFunction();return false;"></a>
+                        <br>Here is your "alert box" 🫤 not perfect. 
+                        <br>But you can place this span anywhere you'd like, including pop over all content like an alert box.. Just need to create a box template for "alerts".</span>
+                </div>
+            </div>
+        </div>
+    </center>
+    <style>
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "questionArea responseArea";
+  width: 50%;
+  height: 50%;
+}
+
+.responseArea { grid-area: responseArea; }
+
+.questionArea { grid-area: questionArea; }
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  /* -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s */
+}
+
+/* Add some flare! 🎉 animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 1px;
+  opacity: 1;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 22px;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+    </style>
+    <script>
+        // When the user clicks, open the popup
+        function popupFunction() {
+            // get the HTML element "myPopup" which is defined in your span element
+            let popup = document.getElementById("myPopup");
+            // toggle visibile 
+            popup.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
