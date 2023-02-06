@@ -104,3 +104,4 @@ document.cookie = "game=; max-age=0";
 // setCookie("game", "RPS");
 // console.log(document.cookie);
 // alert(document.cookie);
+
