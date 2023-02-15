@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Staatliches&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+*, *::before, *::after {box-sizing: inherit;}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #303030;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    background-color: #eae1d1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h4 {
+    font-size: 2.1rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav {
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: #00000057;
+    color: #f1f1f1;
+}
+
+a {
+    color: #f1f1f1;
+}
+
+a:hover {
+    color: #3b4d7e;
+}
+
+.nav__text {
+    width: 60%;
+    color: #303030;
+}

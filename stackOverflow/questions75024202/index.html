@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackOverflow Q&A</title>
+  <link rel="stylesheet" href="questions75024202.css" />
+</head>
+
+<body>
+  <form xmlns="myform">
+    <center>
+      <h1>w3 school alert popup</h1>
+      <input id="HelloWorld" onClick="alert('This text IS NOT showing for your Google page 😿')" type="button"
+        value="HelloWorld" />
+    </center>
+  </form>
+
+  <br>
+  <center>
+    <h1>Solution for Google page 1st attempt</h1>
+  </center>
+  <div class="container">
+    <div class="questionArea">
+      <center>
+        <button onclick="popupFunction()">clickMyButton
+        </button>
+      </center>
+    </div>
+    <div class="responseArea">
+      <br><br><br><br><br>
+      <div class="popup">
+        <span class="popuptext" id="myPopup"><a href="" class="close" onclick="popupFunction();return false;"></a>
+          <a class="closeWhite" onclick="popupFunction()" href="#">&times;</a>
+          <br>Here is your "alert box" 🫤 not perfect.
+          <br>But you can place this span anywhere you'd like, including pop over all content like an alert box.. Just
+          need to create a box template for "alerts".</span>
+      </div>
+    </div>
+  </div>
+  </center>
+
+  <br><br>
+  <center>
+    <h1>Final Solution</h1>
+    <br>
+    This is pure CSS and HTML
+    <br><br>
+    <a class="button" href="#popup1">Click For Alert ⚠️</a>
+    <div id="popup1" class="overlay">
+      <div class="alertPopup">
+        <h2>Alert!</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Test text here
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <script src="./questions75024202.js"></script>
+</body>
+
+</html>
