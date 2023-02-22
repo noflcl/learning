@@ -3,14 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" main="IE=edge">
+    <meta name="viewport" main="width=device-width, initial-scale=1.0">
     <title>CSS Challenge</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="container row">
+            <a href="#">
+                <img class="logo" src="images/logo.svg" alt="responsive layouts menu"></a>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="hero">
         <div class="container row">
             <div class="hero__text">
@@ -23,10 +40,10 @@
             <img class="hero__image" src="./images/hero-img.jpg" alt="CSS sketch">
         </div>
     </div>
-    <div class="content">
+    <div class="main">
         <div class="container row">
             <div class="col-left">
-                <h2 class="content__text">Quality designs made custom, on demand, just for you</h2>
+                <h2 class="main__text">Quality designs made custom, on demand, just for you</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sed maxime cupiditate quisquam!
                     Quae
                     illum
@@ -41,25 +58,32 @@
             </div>
 
             <div class="col-right">
-                <h3>Cheap</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, praesentium. Error explicabo, commodi
-                fuga
-                odio
-                nesciunt id esse obcaecati voluptatem illum harum asperiores optio, ad ab, pariatur ducimus beatae
-                corrupti.
-                <h3>Quick</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est aliquam quo odit mollitia autem nemo
-                tenetur
-                delectus impedit, distinctio sed, sint voluptates deserunt odio repellendus nam in cupiditate
-                necessitatibus?
-                <h3>Quality</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet corrupti atque libero sit ad
-                numquam
-                impedit voluptatibus maxime praesentium vel id dignissimos voluptate repellendus, at similique est quia.
-                Iste.
+                <div class="col-right__text">
+                    <h3>Cheap</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, praesentium. Error explicabo,
+                    commodi
+                    fuga
+                    odio
+                    nesciunt id esse obcaecati voluptatem illum harum asperiores optio, ad ab, pariatur ducimus beatae
+                    corrupti.
+                    <h3>Quick</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est aliquam quo odit mollitia autem
+                    nemo
+                    tenetur
+                    delectus impedit, distinctio sed, sint voluptates deserunt odio repellendus nam in cupiditate
+                    necessitatibus?
+                    <h3>Quality</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet corrupti atque libero sit ad
+                    numquam
+                    impedit voluptatibus maxime praesentium vel id dignissimos voluptate repellendus, at similique est
+                    quia.
+                    Iste.
+                </div>
             </div>
-        </div> <!--container, row end-->
-    </div> <!--content end-->
+        </div>
+        <!--container, row end-->
+    </div>
+    <!--main end-->
 
 </body>
 
