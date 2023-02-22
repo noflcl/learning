@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300&display=swap');
+
+*, *::before, *::after {box-sizing: inherit;}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero {
+    background-color: #F3EED9;
+    padding: 100px;
+    text-align: center;
+}
+
+.hero-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #824936;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-subheading {
+    font-family: 'Roboto', light;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: #f2f2f2;
+    width: 100%;
+}
+
+.gallery {
+    margin: 0 auto;
+    max-width: 1156px;
+}
+
+.gallery__right-image {
+    background-color: #222C2A;
+}
+
+.gallery__left-image {
+    background-color: #824936;
+}
+
