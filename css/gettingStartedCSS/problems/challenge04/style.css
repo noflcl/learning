@@ -124,12 +124,37 @@ header {
     color: #136c72;
 }
 
+.col-left {
+    margin: 0 1em;
+}
+
 .col-right {
     background-color: #136c72;
     color: #f2f2f2;
     text-align: center;
+    padding: 10px;
+    margin-bottom: 1em;
 }
 
 .col-right__text { 
     margin: 2em;
+}
+
+@media (max-width: 820px) {
+    .row {
+        display: block;
+    }
+
+    .hero__text,
+    .hero__image {
+        width: 100%;
+    }
+
+    .hero__image {
+        margin-top: 2em;
+    }
+
+    .col-left {
+        margin: 0 auto;
+    }
 }
