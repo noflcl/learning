@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EED9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.heading {
+    color: #f2f2f2;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.example {
+    width: 90%;
+    margin: 5em auto ;
+    padding: 10em 0;
+    text-align: center;
+    background-color: #4463a9;
+}
+
+/* min-width: 600px or larger - "or larger" is key,
+this is considered mobile first since the default style is applied to smaller
+screens, and items change once desktop viewports are present */
+@media (min-width: 600px) {
+    .example {
+        background-color: rgb(189, 76, 76);
+    }
+}
+
+.spooky {
+    width: 90%;
+    margin: 5em auto ;
+    padding: 10em 0;
+    text-align: center;
+    background-color: rgb(139, 177, 94);
+}
+
+.scary {
+    background-image: url('images/scarymin.jpg');
+    background-position: center;
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .spooky {
+        background-image: url('images/scarymin.jpg');
+        background-position: center;
+    }
+    h3 {
+        display: none;
+    }
+}
