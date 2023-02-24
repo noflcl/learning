@@ -1,65 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Staatliches&display=swap");
 
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Staatliches', cursive;
 */
 
-*, *::before, *::after {box-sizing: inherit;}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: #303030;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    background-color: #eae1d1;
+  background-color: #eae1d1;
+  color: #303030;
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 3rem;
-    font-family: 'Staatliches', cursive;
+  font-size: 3rem;
+  font-family: "Staatliches", cursive;
 }
 
 h2 {
-    font-size: 2.7rem;
-    font-family: 'Staatliches', cursive;
+  font-size: 2.7rem;
+  font-family: "Staatliches", cursive;
 }
 
 h3 {
-    font-size: 2.4rem;
-    font-family: 'Staatliches', cursive;
+  font-size: 2.4rem;
+  font-family: "Staatliches", cursive;
 }
 
 h4 {
-    font-size: 2.1rem;
-    font-family: 'Staatliches', cursive;
+  font-size: 2.1rem;
+  font-family: "Staatliches", cursive;
 }
 
 h5 {
-    font-size: 1.8rem;
-    font-family: 'Staatliches', cursive;
-}
-
-.nav {
-    padding: 10px 0;
-    padding-left: 10px;
-    background-color: #00000057;
-    color: #f1f1f1;
+  font-size: 1.8rem;
+  font-family: "Staatliches", cursive;
 }
 
 a {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 a:hover {
-    color: #3b4d7e;
+  color: #3b4f84;
 }
 
-.nav__text {
-    width: 60%;
+li::marker {
+    content: '🔹';
 }
+
+.row {
+  flex-direction: row;
+}
+
+nav {
+  background: linear-gradient(60deg, #29323c5e 0%, #485563b8 100%);
+  display: flex;
+  margin: 0;
+  padding: 0.5em;
+}
+
