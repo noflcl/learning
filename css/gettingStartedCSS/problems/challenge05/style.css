@@ -1,62 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300&display=swap');
 
-*, *::before, *::after {box-sizing: inherit;}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 html {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+    color: #222C2A;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3125rem;
+    line-height: 1.4;
+    margin: 0;
 }
 
-.img {
+img {
     max-width: 100%;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.hero {
-    background-color: #F3EED9;
-    padding: 100px;
-    text-align: center;
-}
-
-.hero-heading {
+h1, h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    color: #824936;
-    margin: 0;
-    padding: 0;
+    font-weight: 900;
+    margin-top: 0;
 }
 
-.hero-subheading {
-    font-family: 'Roboto', light;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+section {
+    padding: 4em 0;
 }
 
 .container {
-    color: #f2f2f2;
-    width: 100%;
-}
-
-.gallery {
+    width: 80%;
+    max-width: 1128px;
     margin: 0 auto;
-    max-width: 1156px;
 }
 
-.gallery__right-image {
+.section-title {
+    font-size: 2.25rem;
+    color: #F3EED9;
+}
+
+.section-title--dark {
+    color: #824936;
+    text-align: center;
+}
+
+.intro {
+    background-color: #F3EED9;
+    padding: 200px 0;
+    text-align: center;
+    color: #824936;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.intro__text {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.125rem;
+    color: #222C2A;
+    margin: 0 0 0.25em;
+} 
+
+.intro__title {
+    font-size: 3rem;
+}
+
+.section-three {
     background-color: #222C2A;
+    color: #c2c2c2
 }
 
-.gallery__left-image {
+.section-four {
     background-color: #824936;
+    color: #c2c2c2
 }
 
+@media (min-width: 800px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col + .col {
+        margin-left: 4em;
+    }
+
+    .intro__title {
+        font-size: 3.7rem;
+    }
+}
