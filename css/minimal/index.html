@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo-tree.ico" />
+    <title>Minimal Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./assets/js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="nav--action">
+        <div class="menu__icon"></div>menu
+    </div>
+    <div class="nav__logo">
+        <img src="./assets/images/logo-tree.png" alt="Green circle of foliage, with a pine tree silhouette">
+    </div>
+
+    <div class="theme__toggle">
+        <input class="toggle" type="checkbox" onclick="switchLightDarkMode()" />
+    </div>
+
+    <!-- navigation menu -->
+    <nav class="nav nav__text">
+        <ul class="nav__list">
+            <li>
+                <div class="nav__item"><a href="#mission">Mission</a></div>
+            </li>
+            <li>
+                <div class="nav__item"><a
+                        href="https://www.purdueglobal.edu/blog/student-life/45-sustainability-resources/"
+                        target="_blank">Resources</a></div>
+            </li>
+        </ul>
+        <ul class="nav__list">
+            <li>
+                <div class="nav__item"><a href="#popup--contact">Contact</a></div>
+
+            </li>
+            <li>
+                <div class="nav__item"><a href="#popup--signup">Sign Up</a></div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- large header banner -->
+    <header>
+
+        <div class="header__title">
+            <h1>Woodland Preservation</h1>
+        </div>
+        <div class="header__cta">
+            <p>
+            <h2>Want to make a difference?</h2>
+            </p>
+            <button class="cta__button" onclick="window.location.href='#popup--signup';">Get Involved 📣</button>
+
+            <button class="subscribe__button" onclick="window.location.href='#popup--subscribe';">Subscribe
+                💌</button>
+        </div>
+    </header>
+
+    <div class="call-to-action">
+        <div class="cta__banner">
+            <div class="cta__flag">
+                <div class="flag__title">
+                    <h2>Sustainability</h2>
+                </div>
+                <div class="flag__content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem cupiditate doloremque quas vitae
+                    alias non reiciendis magni? Reiciendis esse eaque minima non nihil iusto.
+                </div>
+            </div>
+
+            <div class="cta__flag cta__flag--alt">
+                <div class="flag__title">
+                    <h2>Education</h2>
+                </div>
+                <div class="flag__Content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, excepturi. Sint, deserunt? Sed
+                    reprehenderit labore suscipit doloremque dolorem?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mission">
+        <div class="mission__title">
+            <a id="mission"></a>
+            <h1>Mission Focus</h1>
+        </div>
+        <div class="mission__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique error libero
+                iusto vel fugit explicabo necessitatibus. Placeat ipsa dolorum minus incidunt quasi, est commodi officia
+                quibusdam illo necessitatibus asperiores optio.</p>
+            <div class="mission__quote">
+                <div class="quote__start-tag">▕ </div>
+                <h4>Sustainablity for the future</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero voluptate magni ipsa non possimus
+                illum rerum quaerat dolorum consectetur minus nisi molestias, tenetur alias debitis, natus quisquam
+                vitae
+                soluta.</p>
+        </div>
+    </div>
+
+    <!-- bottom of page footer -->
+    <footer class="footer">
+        <div class="footer__contact">
+            <ul class="contact__list--footer">
+                <li><img src="./assets/images/mail.png"> <a href="#">Email</a></li>
+                <li><img src="./assets/images/twitter.png"> <a href="#">Twitter</a></li>
+                <li><img src="./assets/images/facebook.png"> <a href="#">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer__tag">
+            <div class="footer2">
+                <h4>Save Earth to continue living here.</h4>
+            </div>
+
+            <div class="footer3>">
+                <div class="footer__logo">
+                    <img src="./assets/images/logo-tree.png" alt="Green circle of foliage, with a pine tree silhouette">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ <!-- 
+###
+# Popup Windows
+###
+ -->
+    <!-- Newsletter subscription popup -->
+    <div id="popup--subscribe" class="overlay">
+        <div class="alertPopup popup__newsletter">
+            <div class="popup__title">Subscribe To Our <br>Newsletter</div>
+            <!-- '&times;' gives you the close 'X' for the popup window -->
+            <a class="close" href="#">&times;</a>
+            <div class="popup__content">
+                <div class="subscribe__item">
+                    <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                    <button class="subscribe__button--submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end newsletter popup -->
+
+    <!-- Signup popup -->
+    <div id="popup--signup" class="overlay">
+        <div class="alertPopup popup__signup">
+            <div class="popup__title">Sign Up </div>
+            <!-- '&times;' gives you the close 'X' for the popup window -->
+            <a class="close" href="#">&times;</a>
+            <div class="popup__content">
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                </p>
+                <div class="signup__button">
+                    <button class="subscribe__button--submit">Submit</button>
+                    <button class="subscribe__button--cancel" onclick="location.href='#';">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end signup popup -->
+
+    <!-- Contact info popup -->
+    <div id="popup--contact" class="overlay">
+        <div class="alertPopup popup__contact">
+            <div class="popup__title">Get In Touch</div>
+            <!-- '&times;' gives you the close 'X' for the popup window -->
+            <a class="close" href="#">&times;</a>
+            <div class="popup__content">
+                <div class="subscribe__item">
+                    <ul class="contact__list--popup">
+                        <li><img class="contact__img" src="./assets/images/phone.png">You can reach out
+                            directly. <a href="+888-888-8888"></a></li>
+                        <li><img class="contact__img" src="./assets/images/chat.png">Hop onto a chat with
+                            one of our support assistants.<a href="#"></a></li>
+                        <li><img class="contact__img" src="./assets/images/mail48.png">Drop us an email at
+                            any time.<a href="#"></a></li>
+                        <li><img class="contact__img" src="./assets/images/twitter48.png">We always ❤️
+                            hearing from you on social media.<a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact info popup -->
+
+</body>
+
+</html>
