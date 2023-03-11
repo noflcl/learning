@@ -8,17 +8,44 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>••.• CSS •.••</title>
+    <script src="./assets/js/index.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="http://127.0.0.1:5501/learning">Learning Portal</a></li>
-            <li><a href="http://127.0.0.1:5501/learning/css/gettingStartedCSS/pages/">Pages</a></li>
-            <li><a href="http://127.0.0.1:5501/learning/css/gettingStartedCSS/problems">Problems</a></li>
-            <li><a href="http://127.0.0.1:5501/learning/css/gettingStartedCSS/deepDive/">Deep Dive</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <div class="theme__switch">
+            <button onclick="switchLightDarkTheme()">Switch</button>
+        </div>
+
+        <h1 class="header__title">Getting Started CSS</h1>
+        <h2 class="header__text">The proof is pudding 🍮</h2>
+    </header>
+
+    <div class="wrapper">
+        <nav class="nav" id="nav">
+            <div class="nav--primary">
+                <div class="nav__item"><a href="./pages/">Pages</a></div>
+                <div class="nav__item"><a href="./problems/">Problems</a></div>
+                <div class="nav__item"><a href="./deepDive/flexbox.html">DeepDive</a></div>
+            </div>
+            <div class="nav--social">
+                <div class="nav__item"><a href=""></a></div>
+                <div class="nav__item"><a href="https://github.com/noflcl" target="_blank"><img src="./assets/images/git-48.png"></a></div>
+            </div>
+        </nav>
+
+        <div class="test__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime accusamus ducimus ratione,
+                maiores
+                sunt quae sit. Animi soluta possimus similique eius illum ea harum odio! Eius sed tempora quisquam.</p>
+            <button class="button__menu__toggle" onclick="toggleMenu()">Toggle Menu</button>
+            <!-- <button onclick="checkMenuState()">Check Menu State</button> -->
+        </div>
+
+        <!-- end wrapper -->
+    </div>
+
 </body>
 
 </html>

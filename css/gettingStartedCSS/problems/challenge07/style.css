@@ -1,0 +1,181 @@
+/*  
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #3b4050;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  background-color: #2e323f;
+  color: #f2f2f2;
+  font-family: "Oswald", "Bold";
+  font-size: 1.125em;
+  margin: 0;
+}
+
+footer {
+  background-color: #3b4050;
+  color: #f2f2f2;
+  padding: 50px 0;
+}
+
+button {
+  background-color: #a59678;
+  color: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  margin: 5px 0;
+}
+
+.button__nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3b4050;
+}
+
+.header__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 5.625em;
+  color: #f2f2f2;
+  background-color: #3b4050;
+}
+
+.header__content {
+  background-color: #3b4050;
+  color: #f2f2f2;
+  font-family: "Montserrat", "Regular";
+  font-size: 1.5em;
+  padding: 0 15px;
+}
+
+.header--button {
+  font-family: "Oswald", "Bold";
+  font-size: 1.5em;
+}
+
+.footer__title {
+  font-family: "Oswald", "Bold";
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer__item__title {
+  font-family: "Oswald", "Bold";
+  font-size: 1.3125em;
+  color: #a59678;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 0em 0.5em;
+}
+
+.item__alt {
+  background-color: #3b4050;
+  color: #f2f2f2;
+  font-family: "Montserrat";
+  font-size: 1.3125em;
+  text-align: center;
+  margin: 10px;
+}
+
+.item__title__alt {
+  font-family: "Oswald", "Bold";
+  font-size: 1.875;
+}
+
+.item__title {
+  color: #a59678;
+}
+
+.section-one {
+  background-color: #dfdfdf;
+  color: #2e323f;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section-one__item--title {
+  font-family: "Oswald", "Bold";
+  font-size: 1.25em;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  color: #2e323f;
+  padding: 1em 0;
+}
+
+.section-two__left--title {
+  font-family: "Oswald", "Bold";
+  font-size: 2.25em;
+}
+
+.left-content {
+  font-family: "Montserrat", "Regular";
+  font-size: 1.3125em;
+  margin: 1em;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 1000px) {
+    .section-two {
+        flex-direction: column;
+    }
+
+    .right-content {
+        flex-direction: row;
+    }
+
+    .img__left-content {
+        width: 100vw;
+        height: 350px;
+    }
+}
